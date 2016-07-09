@@ -13,12 +13,18 @@
     </span>
     {{#if useFontAwesome}}
       {{#if label}}
-        <input class="reactive-table-input form-control" type="text" value="{{filter}}" placeholder="{{label}}">
+      <div class="ui input">
+        <input class="prompt reactive-table-input form-control" type="text" value="{{filter}}" placeholder="{{label}}">
+      </div>
       {{else}}
-        <input class="reactive-table-input form-control" type="text" value="{{filter}}" placeholder="{{i18n 'reactiveTable.filter'}}">
+        <div class="ui input">
+          <input class="reactive-table-input form-control" type="text" value="{{filter}}" placeholder="{{i18n 'reactiveTable.filter'}}">
+        </div>
       {{/if}}
     {{else}}
-      <input class="reactive-table-input form-control" type="text" value="{{filter}}">
+      <div class="ui input">
+        <input class="reactive-table-input form-control" type="text" value="{{filter}}">
+      </div>
     {{/if}}
   </div>
 </template>

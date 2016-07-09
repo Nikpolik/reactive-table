@@ -85,7 +85,9 @@
             <div class="form-inline form-group rows-per-page">
               <label>
                 <span>{{i18n 'reactiveTable.show'}}</span>
-                <input class="form-control" type="text" value="{{getRowsPerPage}}">
+                <div class="ui input">
+                  <input class="form-control" type="text" value="{{getRowsPerPage}}">
+                </div>
                 {{#if showRowCount}}
                   <span>{{i18n 'reactiveTable.of'}}</span>
                   <span class="rows-per-page-count">{{getRowCount}}</span>
